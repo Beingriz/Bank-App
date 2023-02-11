@@ -81,6 +81,6 @@ public class SBIBank implements BankInterface{
 
     @Override
     public double rateOfInterest(int amount, int time) {
-        return 0;
+        return (double) (amount*this.roi*time)/100.0;
     }
 }
